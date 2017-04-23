@@ -1,0 +1,14 @@
+{
+	"name": "Multiplicatron",
+	"version": "0.1.0",
+	"description": "Sample app showing simple multiplication function deployed to cloud",
+	"main": "server/server.js",
+	"scripts": {
+		"postinstall": "browserify client/app.js -o client/bundle.js",
+		"start": "node server/server.js"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"browserify": "^14.1.0"
+	}
+}

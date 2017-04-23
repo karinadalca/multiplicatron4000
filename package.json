@@ -1,0 +1,13 @@
+{
+  "name": "Addinator",
+  "version": "0.1.0",
+  "description": "Sample app showing simple adding function deployed to cloud",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^14.3.0"
+  }
+}
