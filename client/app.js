@@ -2,8 +2,8 @@ const multiply = require('./multipier.js');
 
 function addTextBox() {
 	let idIndex = document.getElementsByTagName("input").length+1;
-
 	let element = document.createElement("input");
+
 	element.setAttribute("type", "text");
 	element.setAttribute("value", "");
 	element.setAttribute("id", "input-num" + idIndex);
@@ -41,15 +41,16 @@ class ViewManager {
 
 		let idIndex = 3;
 
-		while(document.getElementById('input-num' + idIndex)){		
-			let num = document.getElementById(
-			'input-num' + idIndex).value;
-			console.log(num);
-			num = parseInt(num, 10);
+		while(idIndex <= document.getElementsByTagName('input').length){		
+			if(document.getElementById('input-num' + idIndex).value !== ""){
+				let num = document.getElementById('input-num' + idIndex).value;
+				num = parseInt(num, 10);
 
-			product = multiply(product, num);
-
-			idIndex++;
+				product = multiply(product, num);
+				idIndex++;
+			} else {
+				idIndex++;
+			}
 		}
 
 		this.renderProduct([product]);
