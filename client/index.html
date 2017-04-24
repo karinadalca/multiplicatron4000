@@ -13,11 +13,40 @@
 	    <div>
 	    	<input id="input-num2" type="text" autocomplete="off" />
 	    </div>
+
+	    <div id="new-input">
+
+	    </div>
+
 	    <hr>
 	    <div class="product">?</div>
 	    <button>Calculate!</button>
+
+	    <script>
+		let idIndex = 3;
+
+		function addTextBox() {
+			let element = document.createElement("input");
+			element.setAttribute("type", "text");
+			element.setAttribute("value", "");
+			element.setAttribute("id", "input-num" + idIndex++);
+
+			element.onclick = function(){
+
+			}
+
+			let foo = document.getElementById("new-input");
+			foo.appendChild(element);
+		}
+		</script>
+
+		<dev>
+			<button class="button" onClick="addTextBox();">New Factor</button>
+		</dev>
 	</form>
+
 	<script src="bundle.js"></script>
+
 </body>
 
 </html>

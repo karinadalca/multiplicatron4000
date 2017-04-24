@@ -20,8 +20,57 @@
 	margin-top: 50px;
 }
 
+#new-input {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#new-input > div {
+	padding: 10px 20px;
+}
+
+#new-input hr, input[type=text] {
+	width: 80px;
+	font-size: 36px;
+	text-align: center;
+}
+
+#newFactor {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#newFactor > div {
+	padding: 10px 20px;
+}
+
+#newFactor hr, input[type=text] {
+	width: 80px;
+	font-size: 36px;
+	text-align: center;
+}
+
+#newFactor button{
+	font-size: 36px;
+	margin-top: 50px;
+}
+
 .product {
 	font-size: 48px;
 	font-weight: bold;
 	text-align: center;
+}
+
+.button {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+	font-size: 30px;
+	margin-top: 50px;
 }
