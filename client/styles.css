@@ -7,17 +7,20 @@
 
 #form-numbers > div {
 	padding: 10px 20px;
+
 }
 
 #form-numbers hr, input[type=text] {
 	width: 80px;
 	font-size: 36px;
 	text-align: center;
+	vertical-align: middle;
 }
 
-#form-numbers button{
-	font-size: 36px;
-	margin-top: 50px;
+#form-numbers button {
+	width: 200px;
+	font-size: 30px;
+	margin-top: 30px;
 }
 
 #new-input {
@@ -27,50 +30,17 @@
 
 }
 
-#new-input > div {
-	padding: 10px 20px;
-}
-
-#new-input hr, input[type=text] {
+#new-input input[type=text] {
+	display: block;
+	margin: 10px 20px;
 	width: 80px;
 	font-size: 36px;
 	text-align: center;
-}
-
-#newFactor {
-	width: 200px;
-	margin: 0 auto;
-	text-align: center;
-
-}
-
-#newFactor > div {
-	padding: 10px 20px;
-}
-
-#newFactor hr, input[type=text] {
-	width: 80px;
-	font-size: 36px;
-	text-align: center;
-}
-
-#newFactor button{
-	font-size: 36px;
-	margin-top: 50px;
+	vertical-align: middle;
 }
 
 .product {
 	font-size: 48px;
 	font-weight: bold;
 	text-align: center;
-}
-
-.button {
-	width: 200px;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-	padding: 10px 20px;
-	font-size: 30px;
-	margin-top: 50px;
 }
