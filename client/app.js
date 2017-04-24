@@ -1,5 +1,22 @@
 const multiply = require('./multipier.js');
 
+function addTextBox() {
+	let idIndex = document.getElementsByTagName("input").length+1;
+
+	let element = document.createElement("input");
+	element.setAttribute("type", "text");
+	element.setAttribute("value", "");
+	element.setAttribute("id", "input-num" + idIndex);
+
+
+	let foo = document.getElementById("new-input");
+	foo.appendChild(element);
+}
+
+window.onload = function() {
+	document.getElementById('newFactor').onclick = addTextBox;
+}
+
 class ViewManager {
 
 	connectEventHandlers() {
